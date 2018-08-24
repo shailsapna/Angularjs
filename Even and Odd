@@ -1,0 +1,15 @@
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    //add your code here
+    $scope.number1=1;
+    $scope.number2=2;
+    
+    $scope.odd_even = function(result) {
+            if(result % 2 == 0) {
+                return 'even';
+}
+            else if(result % 2 == 1){
+                return 'odd';
+            }
+        }
+});
